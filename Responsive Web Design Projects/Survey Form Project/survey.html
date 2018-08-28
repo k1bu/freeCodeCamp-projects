@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Course Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Course Survey Form</h1>
+        <p id="description">Help us improve the student experience</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div id="basic">
+                <label for="name" id="name-label">Name:</label><input type="text" id="name" placeholder="Enter your name here" required>
+                <label for="email" id="email-label">Email:</label><input type="email" id="email" placeholder="Enter your email here" required>
+                <label for="age" id="number-label">Age:</label><input type="number" min="18" max="99" id="number" placeholder="Enter age" required>
+            </div>
+            <div>
+            <label for="dropdown">Please select your industry</label>
+                <select id="dropdown">
+                    <option value="pharmaceutical">Pharmaceutical</option>
+                    <option value="financial">Financial Services</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="professional">Professional Services</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Which course did you take?</legend>
+                    <div>
+                        <input type="radio" id="intention" name="course" value="intention">
+                        <label for="intention">Intention</label>
+                    </div> 
+                    <div>
+                        <input type="radio" id="attention" name="course" value="attention">
+                        <label for="attention">Attention</label>
+                    </div> 
+                    <div>
+                        <input type="radio" id="decision-making" name="course" value="decision-making">
+                        <label for="decision-making">Decision Making</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="behavior" name="course" value="behavior">
+                        <label for="behavior">Behavior</label>
+                    </div> 
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>I want to learn more about</legend>
+                    <div id="checkbox">
+                        <input type="checkbox" id="attentional-characteristics" name="learn-more" value="attentional-characteristics">
+                        <label>Attentional Characteristics</label>
+                        <input type="checkbox" id="intrapersonal-tendencies" name="learn-more" value="intrapersonal-tendencies">
+                        <label>Intrapersonal Tendencies</label>
+                        <input type="checkbox" id="interpersonal-tendencies" name="learn-more" value="interpersonal-tendencies">
+                        <label>Interpersonal Tendencies</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <textarea placeholder="Please write any additional comments here"></textarea>
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
