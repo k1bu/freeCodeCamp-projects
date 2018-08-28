@@ -22,9 +22,9 @@ main {
 }
 
 #img-caption {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 img {
